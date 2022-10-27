@@ -11,7 +11,7 @@ var particles = [];
 var flowfield;
 
 function setup() {
-  let cnv = createCanvas(2000, 1400)
+  let cnv = createCanvas(2000, 2000)
   cnv.position(0, 0);
 
   colorMode(HSB, 255);
@@ -21,7 +21,7 @@ function setup() {
 
   flowfield = new Array(cols * rows);
 
-  for (var i = 0; i < 1500; i++) {
+  for (var i = 0; i < 2000; i++) {
     particles[i] = new Particle();
   }
   background(0);
